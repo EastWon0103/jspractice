@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>hello</title>
+        <meta charset="utf-8">
+        <style>
+            body{
+                background-position: center center;
+                background-image: url("bgimg.jpg");
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-attachment: fixed;
+            }
+            .js-clock{
+                font-family: "FreeMono", monospace;
+                font-weight: bold;
+                white-space: nowrap;
+                margin: 0px;
+                position: fixed;
+                top:35%;
+                left: 50%;
+                transform: translate(-50%, -35%); /*공부가 더필요*/
+                color:white;
+            }
+            #time{
+                display:inline;
+                font-size: 5rem;
+            }
+            #afternoon{
+                display: inline;
+                font-size: 3rem;
+            }
+        </style>
+    <head>
+    <body>
+        <div class="js-clock">
+            <div id="time">00:00:00</div>
+            <div id="afternoon">AM</div>
+            <script src="clock.js"></script>
+        </div>
+    </body>
+</html>
